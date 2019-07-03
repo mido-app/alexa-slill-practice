@@ -2,20 +2,19 @@
   "manifest": {
     "publishingInformation": {
       "locales": {
-        "en-US": {
-          "summary": "Sample Short Description",
+        "ja-JP": {
+          "summary": "シンプルなタスク管理",
           "examplePhrases": [
-            "Alexa open hello world",
-            "hello",
-            "help"
+            "タスク管理を開いて",
+            "タスクを追加して"
           ],
-          "name": "alexa-slill-practice",
-          "description": "Sample Full Description"
+          "name": "タスク管理",
+          "description": "シンプルなタスク管理ツール"
         }
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "Sample Testing Instructions.",
-      "category": "KNOWLEDGE_AND_TRIVIA",
+      "testingInstructions": "タスク管理を開いて",
+      "category": "CALENDARS_AND_REMINDERS",
       "distributionCountries": []
     },
     "apis": {

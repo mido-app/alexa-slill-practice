@@ -8,12 +8,12 @@ const LaunchRequestHandler = {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
   },
   handle(handlerInput) {
-    const speechText = 'Welcome to the Alexa Skills Kit, you can say hello!';
+    console.dir('handlerInput');
+    const speechText = 'こんにちは！タスクを追加するには「タスクを追加して」と話しかけて下さい';
 
     return handlerInput.responseBuilder
       .speak(speechText)
       .reprompt(speechText)
-      .withSimpleCard('Hello World', speechText)
       .getResponse();
   },
 };
@@ -21,14 +21,13 @@ const LaunchRequestHandler = {
 const HelloWorldIntentHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
-      && handlerInput.requestEnvelope.request.intent.name === 'HelloWorldIntent';
+      && handlerInput.requestEnvelope.request.intent.name === 'TodoIntent';
   },
   handle(handlerInput) {
-    const speechText = 'Hello World!';
+    const speechText = 'ごめんなさい。タスクの追加は現在実装中です。';
 
     return handlerInput.responseBuilder
       .speak(speechText)
-      .withSimpleCard('Hello World', speechText)
       .getResponse();
   },
 };

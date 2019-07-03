@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "hello world",
+      "invocationName": "タスク管理",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -16,9 +16,11 @@
           "samples": []
         },
         {
-          "name": "HelloWorldIntent",
+          "name": "TodoIntent",
           "samples": [
-            "hello"
+            "タスクを追加して",
+            "タスクを加えて",
+            "タスクを増やして"
           ]
         }
       ]
